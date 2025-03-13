@@ -8,10 +8,10 @@ if (!isset($_SESSION['username']) || !isset($_SESSION['user_id']) || !isset($_SE
 }
 
 // Database Connection
-$host = '91.216.107.164';
-$user = 'amzz2427862';
-$pass = '37qB5xqen4prX8@';
-$dbname = 'amzz2427862';
+$host = 'localhost';
+$user = 'root;
+$pass = 'root';
+$dbname = 'cloudbox';
 $conn = new mysqli($host, $user, $pass, $dbname);
 if ($conn->connect_error) die("Database connection failed: " . $conn->connect_error);
 $conn->options(MYSQLI_OPT_CONNECT_TIMEOUT, 60);
